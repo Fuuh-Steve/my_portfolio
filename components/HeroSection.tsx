@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail, FileText, Clock, X } from 'lucide-react';
 import { playBlip } from '@/lib/sound';
 import { fastScrollTo } from '@/lib/scroll';
@@ -14,7 +14,7 @@ interface HeroSectionProps {
 export default function HeroSection({ onOpenResume }: HeroSectionProps) {
   const [localTime, setLocalTime] = useState<string>('');
   const [roleIndex, setRoleIndex] = useState(0);
-  const rotatingRoles = ['Web Developer', 'Front-end Engineer', 'Backend Engineer', 'Fullstack Engineer', 'STEM Enthusiast', 'Engineering Student', 'Community Builder', 'Tech Advocate', 'Tech Educator', 'Tech Innovator', 'Tech Explorer'];
+  const rotatingRoles = ['Full-Stack Developer', 'Frontend Builder', 'Backend Engineer', 'Product-minded Engineer', 'Engineering Student', 'Community Builder', 'Problem Solver', 'UI Enthusiast', 'Learning in Public', 'Tech Advocate'];
 
   useEffect(() => {
     const updateTime = () => {
@@ -111,7 +111,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
           </motion.div>
 
           <motion.p variants={itemVariants} className="text-base sm:text-lg text-zinc-300 max-w-xl leading-relaxed font-normal">
-            I build modern web applications with thoughtful UX, clean architecture, and reliable performance for people who want products that feel fast, polished, and scalable.
+            I’m a full-stack developer and engineering student who likes building digital products that feel fast, useful, and genuinely well thought through—from the interface to the systems behind it.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3 pt-1">
@@ -197,10 +197,15 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
         {/* Right Column: Clean Modern Portrait */}
         <motion.div variants={itemVariants} className="lg:col-span-5 flex justify-center lg:justify-end">
           <motion.div
-            whileHover={{ y: -4 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className="relative w-full max-w-[340px] aspect-square rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-xl group cursor-pointer"
+            initial={{ rotate: 0, y: 0 }}
+            animate={{ rotate: 0, y: 0 }}
+            whileHover={{ y: -10, rotateX: 8, rotateY: -8, scale: 1.02 }}
+            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+            style={{ transformPerspective: 1500 }}
+            className="relative w-full max-w-[340px] aspect-square rounded-[30px] overflow-hidden border border-white/10 bg-zinc-900/80 shadow-[0_25px_70px_rgba(0,0,0,0.42)] group cursor-pointer"
           >
+            <div className="absolute inset-2 rounded-[24px] border border-white/5 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent pointer-events-none" />
             <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDumQgPuF6ILbseA1aCApK_pPk3N126m6ykxrWYE7D6cY1x38gQCL1_mUO04_OvcFMovNC-2cW5kz7uMndYXut_7J6U19c3hpAmoGrYZlhWdNQZv7HjIHoNz1uBFoW5qV_BqLgW98p-KLa7L3p7QVMgQqU2Kzy3WKZvG67TU_2895il9-K-WQkGJlFudzmzGEqUuE810Wgq_EJK2GeJJZ_4jnuluVOX3hSFs9griN4L_vY_B0Yzc1Gt"
               alt="FU-UH Steve Junior Atsi (Steve Jr)"
@@ -210,10 +215,10 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
               className="object-cover filter contrast-110 group-hover:scale-105 transition-transform duration-500 ease-out"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none"></div>
-            <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-zinc-300 font-mono">
-              <span className="font-display font-medium">Steve Jr • Software Engineer</span>
-              <span className="text-[10px] bg-white/10 px-2 py-0.5 rounded-full border border-white/10">Active</span>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent pointer-events-none"></div>
+            <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-zinc-200 font-mono">
+              <span className="font-display font-medium">Steve Jr • Full-Stack Developer</span>
+              <span className="text-[10px] bg-white/10 px-2 py-0.5 rounded-full border border-white/10 backdrop-blur-sm">Active</span>
             </div>
           </motion.div>
         </motion.div>

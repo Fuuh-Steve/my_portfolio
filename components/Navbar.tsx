@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { playBlip } from '@/lib/sound';
 import { fastScrollTo } from '@/lib/scroll';
@@ -53,21 +54,24 @@ export default function Navbar() {
                 : 'bg-zinc-950/75 shadow-lg border border-zinc-800/80 backdrop-blur-lg'
             }`}
           >
-            {/* Brand Logo: SJ close to Steve Jr only, no white rounded background */}
+            {/* Brand Logo */}
             <motion.a
               href="#about"
               onClick={(e) => handleNavClick(e, '#about')}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="flex items-center gap-2 group cursor-pointer select-none"
+              className="flex items-center group cursor-pointer select-none"
               title="FU-UH Steve Junior Atsi (Steve Jr)"
             >
-              <span className="text-lg font-black font-logo text-white tracking-tight group-hover:text-zinc-300 transition-colors">
-                SJ
-              </span>
-              <span className="text-base font-bold font-logo text-white tracking-tight group-hover:text-zinc-200 transition-colors">
-                Steve Jr
-              </span>
+              <div className="relative h-9 w-32 sm:h-10 sm:w-36">
+                <Image
+                  src="/steve-junior-logo.svg"
+                  alt="Steve Junior logo"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </div>
             </motion.a>
 
             {/* Desktop Navigation Links */}

@@ -2,17 +2,17 @@ import type {Metadata} from 'next';
 import './globals.css'; // Global styles
 
 export const metadata: Metadata = {
-  title: 'FU-UH Steve Junior Atsi (Steve Jr) // Systems Architect & Full-Stack Engineer',
-  description: 'Portfolio of FU-UH Steve Junior Atsi (Steve Jr) — Systems architect and full-stack engineer building distributed runtimes, Next.js applications, and precision interfaces.',
+  title: 'FU-UH Steve Junior Atsi (Steve Jr) // Full-Stack Developer & Engineering Student',
+  description: 'Portfolio of FU-UH Steve Junior Atsi (Steve Jr) — full-stack developer and engineering student building modern web products, APIs, and user-focused digital experiences.',
   openGraph: {
-    title: 'FU-UH Steve Junior Atsi (Steve Jr) // Systems Architect & Full-Stack Engineer',
-    description: 'Portfolio of FU-UH Steve Junior Atsi (Steve Jr) — Systems architect and full-stack engineer building distributed runtimes, Next.js applications, and precision interfaces.',
+    title: 'FU-UH Steve Junior Atsi (Steve Jr) // Full-Stack Developer & Engineering Student',
+    description: 'Portfolio of FU-UH Steve Junior Atsi (Steve Jr) — full-stack developer and engineering student building modern web products, APIs, and user-focused digital experiences.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FU-UH Steve Junior Atsi (Steve Jr) // Systems Architect & Full-Stack Engineer',
-    description: 'Portfolio of FU-UH Steve Junior Atsi (Steve Jr) — Systems architect and full-stack engineer building distributed runtimes, Next.js applications, and precision interfaces.',
+    title: 'FU-UH Steve Junior Atsi (Steve Jr) // Full-Stack Developer & Engineering Student',
+    description: 'Portfolio of FU-UH Steve Junior Atsi (Steve Jr) — full-stack developer and engineering student building modern web products, APIs, and user-focused digital experiences.',
   },
 };
 

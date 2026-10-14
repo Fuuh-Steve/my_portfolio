@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Check, Copy, Send, Github, Linkedin, MapPin, Mail, Sparkles } from 'lucide-react';
 import { playBlip } from '@/lib/sound';
 
@@ -75,7 +75,7 @@ export default function DispatchContact() {
             Let&apos;s build something great.
           </h2>
           <p className="text-sm text-zinc-400 max-w-lg">
-            Have a project in mind, an engineering role, or architecture consultation? Get in touch with Steve Jr directly.
+            Have a project in mind, a collaboration opportunity, or a software engineering role? Get in touch with Steve Jr directly.
           </p>
         </motion.div>
 

@@ -1,24 +1,24 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Code2, Cpu, ShieldCheck } from 'lucide-react';
 
 export default function AboutMe() {
   const values = [
     {
       icon: Cpu,
-      title: 'Systems & Scalability',
-      description: 'Designing distributed data pipelines and low-overhead services with Rust, Node.js, and ClickHouse that scale cleanly under production loads.',
+      title: 'Building with intent',
+      description: 'I like creating systems and features that are practical, efficient, and built to last—whether that means cleaner APIs or smarter product flows.',
     },
     {
       icon: Code2,
-      title: 'Precision Frontend',
-      description: 'Crafting responsive, accessible web interfaces with Next.js, React, and Tailwind CSS. Obsessed with fast first paints and zero layout shift.',
+      title: 'Designing for people',
+      description: 'I care about how software feels in the hands of real users: smooth interfaces, clear experiences, and thoughtful details that make products easier to love.',
     },
     {
       icon: ShieldCheck,
-      title: 'Developer Experience',
-      description: 'Maintaining open-source design systems, building reusable component primitives, and establishing robust CI/CD and testing pipelines.',
+      title: 'Learning in public',
+      description: 'I enjoy growing through hands-on work, community building, and constant iteration—especially when it helps me improve the way I build and teach.',
     },
   ];
 
@@ -57,7 +57,7 @@ export default function AboutMe() {
             About Me
           </span>
           <h2 className="text-3xl md:text-4xl font-bold font-display text-white tracking-tight">
-            Crafting software at the intersection of systems &amp; UI.
+            I build software that feels useful, polished, and personal.
           </h2>
         </motion.div>
 
@@ -65,40 +65,40 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <motion.div variants={itemVariants} className="lg:col-span-6 space-y-4 text-zinc-300 text-base leading-relaxed">
             <p>
-              Hi, I&apos;m <strong className="text-white font-semibold">FU-UH Steve Junior Atsi</strong>, widely known as <strong className="text-white font-semibold">Steve Jr</strong>. I am a systems architect and full-stack software engineer with over 5 years of experience building scalable applications and distributed cloud services.
+              Hi, I&apos;m <strong className="text-white font-semibold">Steve Jr</strong> — a full-stack developer, Year 4 engineering student, and community builder. I like turning ideas into software that feels intentional, useful, and genuinely enjoyable to use.
             </p>
             <p className="text-zinc-400">
-              My engineering philosophy is built around clarity and performance: writing clean, deterministic code, picking the right boundaries between browser and backend, and maintaining zero-bloat dependencies.
-            </p>
-            <p className="text-zinc-400">
-              I specialize in end-to-end TypeScript and Next.js applications, low-latency Rust/WASM kernels, and event-driven architectures that process millions of records with high reliability.
+              My work sits between product thinking and engineering execution: I build clean interfaces, reliable APIs, and thoughtful digital experiences with React, Next.js, TypeScript, and modern backend tools. I’m always learning, improving, and trying to build things that solve real problems with style.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
             <motion.div
-              whileHover={{ y: -3 }}
-              className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-1"
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+              className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-1 shadow-[0_8px_24px_rgba(0,0,0,0.2)]"
             >
-              <span className="text-zinc-500 text-[10px] block uppercase">EXPERIENCE</span>
-              <span className="text-white text-lg font-bold font-display">5+ Years</span>
-              <p className="text-zinc-400 text-[11px] font-sans">Full-stack &amp; systems engineering</p>
+              <span className="text-zinc-500 text-[10px] block uppercase">EDUCATION</span>
+              <span className="text-white text-lg font-bold font-display">Year 4</span>
+              <p className="text-zinc-400 text-[11px] font-sans">Engineering student</p>
             </motion.div>
             <motion.div
-              whileHover={{ y: -3 }}
-              className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-1"
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+              className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-1 shadow-[0_8px_24px_rgba(0,0,0,0.2)]"
             >
-              <span className="text-zinc-500 text-[10px] block uppercase">COMMUNITY</span>
-              <span className="text-white text-lg font-bold font-display">1,200+</span>
-              <p className="text-zinc-400 text-[11px] font-sans">GitHub stars across crates &amp; tools</p>
+              <span className="text-zinc-500 text-[10px] block uppercase">FOCUS</span>
+              <span className="text-white text-lg font-bold font-display">Full-Stack</span>
+              <p className="text-zinc-400 text-[11px] font-sans">Web, APIs &amp; product building</p>
             </motion.div>
             <motion.div
-              whileHover={{ y: -3 }}
-              className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-1"
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+              className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-1 shadow-[0_8px_24px_rgba(0,0,0,0.2)]"
             >
               <span className="text-zinc-500 text-[10px] block uppercase">LOCATION</span>
               <span className="text-white text-lg font-bold font-display">Worldwide</span>
-              <p className="text-zinc-400 text-[11px] font-sans">Open to Remote &amp; Relocation</p>
+              <p className="text-zinc-400 text-[11px] font-sans">Open to Remote &amp; relocation</p>
             </motion.div>
           </motion.div>
         </div>
@@ -111,9 +111,9 @@ export default function AboutMe() {
               <motion.div
                 key={val.title}
                 variants={itemVariants}
-                whileHover={{ y: -4 }}
-                transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-                className="p-5 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-2 hover:border-zinc-700 transition-colors"
+                whileHover={{ y: -5, scale: 1.01 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                className="p-5 rounded-xl bg-zinc-950 border border-zinc-800/80 space-y-2 hover:border-zinc-700 transition-colors shadow-[0_10px_28px_rgba(0,0,0,0.22)]"
               >
                 <div className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white">
                   <Icon className="w-4 h-4" />

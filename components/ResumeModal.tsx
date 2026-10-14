@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, Mail, MapPin, Briefcase, GraduationCap, CheckCircle2 } from 'lucide-react';
 import { playBlip } from '@/lib/sound';
 
@@ -69,7 +69,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 </span>
               </div>
               <p className="text-zinc-400 font-medium">
-                Systems Architect &amp; Full-Stack Software Engineer
+                Full-Stack Developer &amp; Engineering Student
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-mono text-zinc-400 pt-1">
                 <span className="flex items-center gap-1">
@@ -89,7 +89,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 Executive Profile
               </h3>
               <p className="text-zinc-300 leading-relaxed text-xs sm:text-sm">
-                Versatile Software Engineer &amp; Systems Architect specializing in end-to-end web architectures, high-performance distributed runtimes, and precision user interfaces with TypeScript, Next.js, and Rust. Proven record architecting real-time event pipelines, low-latency API orchestrations, and maintaining modern accessible design systems.
+                Full-stack developer and engineering student focused on building modern web products, API-driven systems, and user-centered experiences with React, Next.js, TypeScript, and backend technologies. I enjoy creating reliable, scalable software and continuously improving my skills in product development and emerging technologies.
               </p>
             </div>
 

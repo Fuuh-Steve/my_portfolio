@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 export default function CareerTimeline() {
   const experiences = [
@@ -89,9 +89,9 @@ export default function CareerTimeline() {
             <motion.div
               key={exp.role + exp.company}
               variants={itemVariants}
-              whileHover={{ y: -3 }}
-              transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-              className="p-6 md:p-7 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors space-y-4 shadow-sm"
+              whileHover={{ y: -5, scale: 1.01 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+              className="p-6 md:p-7 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors space-y-4 shadow-[0_12px_30px_rgba(0,0,0,0.24)]"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                 <div>

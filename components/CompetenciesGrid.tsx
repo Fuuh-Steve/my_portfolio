@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Layers, Cpu, Database, Cloud, Search } from 'lucide-react';
 import { playBlip } from '@/lib/sound';
 
@@ -12,25 +12,25 @@ export default function CompetenciesGrid() {
     {
       title: 'Frontend & UI',
       icon: Layers,
-      description: 'Modern component architectures, design systems, and responsive interfaces.',
+      description: 'I care a lot about interfaces that feel smooth, clear, and easy to trust.',
       skills: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Figma'],
     },
     {
       title: 'Backend & Systems',
       icon: Cpu,
-      description: 'High-throughput servers, microservices, and WebAssembly kernels.',
-      skills: ['Node.js', 'Rust', 'WebAssembly', 'Go', 'Python / FastAPI', 'GraphQL', 'REST / gRPC'],
+      description: 'The logic and structure behind the product matter just as much as the interface.',
+      skills: ['Node.js', 'WebAssembly', 'Go', 'Python / FastAPI', 'GraphQL', 'REST / gRPC'],
     },
     {
       title: 'Data & Telemetry',
       icon: Database,
-      description: 'Relational databases, columnar analytical stores, and streaming brokers.',
+      description: 'I like data that helps products become more reliable, useful, and easier to improve.',
       skills: ['PostgreSQL', 'ClickHouse', 'Redis Streams', 'Apache Kafka', 'Prisma / Drizzle'],
     },
     {
       title: 'Cloud & Infrastructure',
       icon: Cloud,
-      description: 'Containerized deployments, edge workers, and continuous deployment.',
+      description: 'I enjoy shipping clean, dependable software with solid deployment workflows behind it.',
       skills: ['Docker', 'AWS ECS & S3', 'Cloudflare Workers', 'GitHub Actions', 'Vercel', 'Turborepo'],
     },
   ];
@@ -73,10 +73,10 @@ export default function CompetenciesGrid() {
               Tech Stack
             </span>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-white tracking-tight">
-              Tools &amp; Technologies
+              Tools I use to build
             </h2>
             <p className="text-sm text-zinc-400 max-w-lg">
-              Technologies I reach for to build fast, reliable, and scalable web software.
+              I work across the stack, from product ideas and interfaces to APIs and the systems behind them.
             </p>
           </div>
 
@@ -101,9 +101,9 @@ export default function CompetenciesGrid() {
               <motion.div
                 key={cat.title}
                 variants={cardVariants}
-                whileHover={{ y: -5 }}
-                transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-                className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors flex flex-col justify-between space-y-4 shadow-sm"
+                whileHover={{ y: -6, scale: 1.01 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors flex flex-col justify-between space-y-4 shadow-[0_10px_30px_rgba(0,0,0,0.28)]"
               >
                 <div className="space-y-3">
                   <div className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white">

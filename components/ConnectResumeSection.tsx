@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import {
   FileText,
   Download,
@@ -83,9 +83,9 @@ export default function ConnectResumeSection({ onOpenResume }: ConnectResumeSect
           Want to Connect &amp; Work Together?
         </h2>
         <p className="text-zinc-400 text-base sm:text-lg leading-relaxed font-sans">
-          I am always excited to discuss high-impact software engineering roles, distributed systems challenges,
-          and ambitious digital products. Whether you are building a founding engineering team, looking for a
-          proven Systems Architect, or looking to download my resume — let&apos;s start a conversation.
+          I am always excited to discuss software engineering roles, product-building opportunities,
+          and ambitious digital experiences. Whether you are looking for a full-stack developer, a learner with strong execution skills,
+          or simply want to connect and learn more — let&apos;s start a conversation.
         </p>
       </motion.div>
 
@@ -198,7 +198,7 @@ export default function ConnectResumeSection({ onOpenResume }: ConnectResumeSect
             </h3>
 
             <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              Available for full-time engineering roles, high-scale architecture consulting, and high-velocity product launches.
+              Available for engineering opportunities, product collaborations, and meaningful software work while continuing my studies.
             </p>
 
             {/* Email Copy Card */}

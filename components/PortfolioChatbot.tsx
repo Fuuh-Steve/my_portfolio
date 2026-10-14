@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   MessageSquare,
   X,
@@ -26,7 +26,7 @@ const STARTER_QUESTIONS = [
   "What is Steve's tech stack?",
   'Tell me about his key projects',
   'How do I download his resume?',
-  'How can I contact or hire Steve?',
+  'How can I contact Steve?',
 ];
 
 export default function PortfolioChatbot() {
@@ -37,7 +37,7 @@ export default function PortfolioChatbot() {
     {
       role: 'assistant',
       content:
-        "Hi! I'm Steve Jr's AI assistant. Ask me anything about his 5+ years of software engineering experience, distributed systems projects, tech stack, or how to connect and download his resume!",
+        "Hi! I'm Steve Jr's AI assistant. Ask me anything about his full-stack development work, current engineering journey, tech stack, or how to connect and download his resume!",
     },
   ]);
 
@@ -92,7 +92,7 @@ export default function PortfolioChatbot() {
         {
           role: 'assistant',
           content:
-            "Steve Jr (FU-UH Steve Junior Atsi) is a Systems Architect & Full-Stack Engineer specializing in high-throughput distributed architectures, Next.js, and TypeScript. You can download his resume in the Connect & Resume section or contact him at fuuhsteve10@gmail.com!",
+            "Steve Jr (FU-UH Steve Junior Atsi) is a full-stack developer and engineering student focused on modern web products, APIs, and product-driven software. You can download his resume in the Connect & Resume section or contact him at fuuhsteve10@gmail.com!",
         },
       ]);
     } finally {
@@ -106,7 +106,7 @@ export default function PortfolioChatbot() {
       {
         role: 'assistant',
         content:
-          "Hi! I'm Steve Jr's AI assistant. Ask me anything about his 5+ years of software engineering experience, distributed systems projects, tech stack, or how to connect and download his resume!",
+          "Hi! I'm Steve Jr's AI assistant. Ask me anything about his full-stack development work, current engineering journey, tech stack, or how to connect and download his resume!",
       },
     ]);
   };

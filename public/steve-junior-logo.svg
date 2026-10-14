@@ -1,0 +1,21 @@
+<svg width="1000" height="720" viewBox="0 0 1000 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="720" fill="#030303"/>
+
+  <g fill="#FFFFFF">
+    <path d="M100 12H294L164 318H0L100 12Z"/>
+    <path d="M280 12H620L474 318H160L280 12Z"/>
+    <path d="M426 170H760L640 370H300L426 170Z"/>
+    <path d="M430 332H860L742 540H300L430 332Z"/>
+    <path d="M560 482H858L760 708H340L560 482Z"/>
+    <path d="M726 12H926V138H820L726 12Z"/>
+    <path d="M648 170H920V296H750L648 170Z"/>
+  </g>
+
+  <g fill="#030303">
+    <path d="M238 56H388L273 292H118L238 56Z"/>
+    <path d="M492 206H632L551 320H420L492 206Z"/>
+    <path d="M522 378H640L584 508H470L522 378Z"/>
+  </g>
+
+  <text x="500" y="673" text-anchor="middle" fill="#FFFFFF" font-size="78" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="6">STEVE JUNIOR</text>
+</svg>

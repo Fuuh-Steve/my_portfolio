@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS, ProjectSpec } from '@/lib/data';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { playBlip } from '@/lib/sound';
@@ -106,9 +106,10 @@ export default function ProjectsSection({ onSelectProject }: ProjectsSectionProp
                 layout
                 key={proj.id}
                 variants={cardVariants}
-                whileHover={{ y: -6 }}
+                whileHover={{ y: -8, scale: 1.01 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 22 }}
                 onClick={() => onSelectProject(proj)}
-                className="group rounded-2xl border border-zinc-800/80 bg-zinc-950/70 overflow-hidden hover:border-zinc-700 transition-all cursor-pointer flex flex-col justify-between shadow-sm"
+                className="group rounded-2xl border border-zinc-800/80 bg-zinc-950/70 overflow-hidden hover:border-zinc-700 transition-all cursor-pointer flex flex-col justify-between shadow-[0_12px_34px_rgba(0,0,0,0.28)]"
               >
                 <div>
                   {/* Image Preview */}
